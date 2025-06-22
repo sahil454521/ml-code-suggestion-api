@@ -6,7 +6,7 @@ import re
 
 app = FastAPI()
 
-clf = joblib.load("model_suggestion_classifier.pkl")
+clf = joblib.load("ml_model_suggestion_rf.pkl")
 le = joblib.load("label_encoder.pkl")
 
 class CodeInput(BaseModel):
